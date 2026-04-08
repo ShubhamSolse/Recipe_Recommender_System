@@ -159,38 +159,47 @@
     <!-- Demo Section -->
     <section id="demo" class="demo">
         <h2 class="section-title">🚀 See It In Action</h2>
-        <div class="demo-container">
-            <div class="demo-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Select User Profile</h3>
-                    <p>Choose an author to personalize recommendations</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Pick AI Model</h3>
-                    <p>Select from NCF, Content-Based, or Collaborative</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Get Recommendations</h3>
-                    <p>Receive 1-10 personalized recipe suggestions</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Cook & Share</h3>
-                    <p>Watch videos, view details, and share recipes</p>
-                </div>
+        <div class="demo-table-container">
+            <table class="demo-table">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Action</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="step-number">1</div></td>
+                        <td><strong>Select User Profile</strong></td>
+                        <td>Choose an author to personalize recommendations</td>
+                    </tr>
+                    <tr>
+                        <td><div class="step-number">2</div></td>
+                        <td><strong>Pick AI Model</strong></td>
+                        <td>Select from NCF, Content-Based, or Collaborative</td>
+                    </tr>
+                    <tr>
+                        <td><div class="step-number">3</div></td>
+                        <td><strong>Get Recommendations</strong></td>
+                        <td>Receive 1-10 personalized recipe suggestions</td>
+                    </tr>
+                    <tr>
+                        <td><div class="step-number">4</div></td>
+                        <td><strong>Cook & Share</strong></td>
+                        <td>Watch videos, view details, and share recipes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="demo-cta">
+            <h3>Ready to Start Cooking?</h3>
+            <p>Install and run the application locally</p>
+            <div class="code-block">
+                <code>pip install -r requirements.txt</code>
+                <code>streamlit run app/app.py</code>
             </div>
-            <div class="demo-cta">
-                <h3>Ready to Start Cooking?</h3>
-                <p>Install and run the application locally</p>
-                <div class="code-block">
-                    <code>pip install -r requirements.txt</code>
-                    <code>streamlit run app/app.py</code>
-                </div>
-                <button class="cta-button secondary">View on GitHub</button>
-            </div>
+            <button class="cta-button secondary">View on GitHub</button>
         </div>
     </section>
 
