@@ -441,23 +441,67 @@ section {
     background: var(--dark);
 }
 
-.demo-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+.demo-table-container {
+    overflow-x: auto;
+    margin-bottom: 3rem;
 }
 
-.demo-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.demo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--glass);
+    backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
-.step {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
+.demo-table thead {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(217, 70, 239, 0.3));
+}
+
+.demo-table th {
+    padding: 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--neon);
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+.demo-table tbody tr {
+    transition: all 0.3s;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.demo-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.demo-table tbody tr:hover {
+    background: rgba(168, 85, 247, 0.1);
+    transform: scale(1.02);
+}
+
+.demo-table td {
+    padding: 1.5rem;
+    color: rgba(250, 250, 250, 0.9);
+    font-weight: 400;
+}
+
+.demo-table td:first-child {
+    text-align: center;
+    width: 100px;
+}
+
+.demo-table td:nth-child(2) {
+    width: 250px;
+    color: var(--neon);
+}
+
+.demo-table td strong {
+    font-weight: 600;
 }
 
 .step-number {
@@ -488,6 +532,8 @@ section {
     border-radius: 20px;
     text-align: center;
     border: 1px solid rgba(168, 85, 247, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .demo-cta h3 {
@@ -586,8 +632,14 @@ section {
         gap: 1rem;
     }
 
-    .demo-container {
-        grid-template-columns: 1fr;
+    .demo-table th,
+    .demo-table td {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .demo-table td:nth-child(2) {
+        width: auto;
     }
 
     .pipeline {
