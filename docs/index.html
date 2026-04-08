@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ AI Recipe Recommender - Smart Cooking Made Easy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">🍽️ AI Recipe Recommender</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#tech">Technology</a></li>
+                <li><a href="#demo">Demo</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Next Favorite Recipe</h1>
+            <p class="hero-subtitle">AI-powered recommendations tailored to your taste</p>
+            <button class="cta-button" onclick="scrollToSection('demo')">Try It Now</button>
+        </div>
+        <div class="floating-food">
+            <span class="food-emoji">🍕</span>
+            <span class="food-emoji">🍔</span>
+            <span class="food-emoji">🍰</span>
+            <span class="food-emoji">🍜</span>
+            <span class="food-emoji">🥗</span>
+            <span class="food-emoji">🍱</span>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">✨ Features That Make Cooking Magical</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Multi-Model AI</h3>
+                <p>Three powerful algorithms: NCF, Content-Based, and Collaborative Filtering</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Interface</h3>
+                <p>Dark-themed, responsive design with 3-column grid layout</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Smart Search</h3>
+                <p>Autocomplete-enabled search to find recipes instantly</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📹</div>
+                <h3>YouTube Integration</h3>
+                <p>Watch video tutorials for every recipe</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Social Sharing</h3>
+                <p>Share your favorite recipes on WhatsApp</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Model Comparison</h3>
+                <p>RMSE evaluation across all recommendation models</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="models">
+        <h2 class="section-title">🤖 Powered by Advanced AI Models</h2>
+        <div class="models-container">
+            <div class="model-card active" data-model="ncf">
+                <div class="model-header">
+                    <h3>Neural Collaborative Filtering</h3>
+                    <span class="model-badge">Deep Learning</span>
+                </div>
+                <div class="model-content">
+                    <p>Advanced neural network with 50-dimensional embeddings</p>
+                    <ul>
+                        <li>User & Item embeddings</li>
+                        <li>128 → 64 → 1 architecture</li>
+                        <li>Handles sparse data effectively</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="model-card" data-model="content">
+                <div class="model-header">
+                    <h3>Content-Based Filtering</h3>
+                    <span class="model-badge">TF-IDF</span>
+                </div>
+                <div class="model-content">
+                    <p>Analyzes recipe content for similarity matching</p>
+                    <ul>
+                        <li>TF-IDF vectorization</li>
+                        <li>Cosine similarity</li>
+                        <li>No cold-start problem</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="model-card" data-model="collab">
+                <div class="model-header">
+                    <h3>Collaborative Filtering</h3>
+                    <span class="model-badge">Community</span>
+                </div>
+                <div class="model-content">
+                    <p>Leverages community preferences and patterns</p>
+                    <ul>
+                        <li>User-user similarity</li>
+                        <li>Rating matrix analysis</li>
+                        <li>Discovers unexpected patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="tech" class="tech-stack">
+        <h2 class="section-title">🛠️ Built With Modern Technology</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <div class="tech-icon">🔥</div>
+                <h4>PyTorch</h4>
+                <p>Neural Networks</p>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🧪</div>
+                <h4>scikit-learn</h4>
+                <p>ML Algorithms</p>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🎯</div>
+                <h4>Streamlit</h4>
+                <p>Web Framework</p>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🐼</div>
+                <h4>Pandas</h4>
+                <p>Data Processing</p>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🕷️</div>
+                <h4>Selenium</h4>
+                <p>Web Scraping</p>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">📊</div>
+                <h4>NumPy</h4>
+                <p>Computations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <h2 class="section-title">🚀 See It In Action</h2>
+        <div class="demo-container">
+            <div class="demo-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select User Profile</h3>
+                    <p>Choose an author to personalize recommendations</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Pick AI Model</h3>
+                    <p>Select from NCF, Content-Based, or Collaborative</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Recommendations</h3>
+                    <p>Receive 1-10 personalized recipe suggestions</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Cook & Share</h3>
+                    <p>Watch videos, view details, and share recipes</p>
+                </div>
+            </div>
+            <div class="demo-cta">
+                <h3>Ready to Start Cooking?</h3>
+                <p>Install and run the application locally</p>
+                <div class="code-block">
+                    <code>pip install -r requirements.txt</code>
+                    <code>streamlit run app/app.py</code>
+                </div>
+                <button class="cta-button secondary">View on GitHub</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="architecture">
+        <h2 class="section-title">🏗️ System Architecture</h2>
+        <div class="pipeline">
+            <div class="pipeline-step">
+                <div class="pipeline-icon">🕷️</div>
+                <h4>Web Scraping</h4>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+                <div class="pipeline-icon">📝</div>
+                <h4>Raw Data</h4>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+                <div class="pipeline-icon">🧹</div>
+                <h4>Preprocessing</h4>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+                <div class="pipeline-icon">🤖</div>
+                <h4>Model Training</h4>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+                <div class="pipeline-icon">✨</div>
+                <h4>Recommendations</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Built with ❤️ for food lovers and AI enthusiasts</p>
+            <p class="footer-tech">PyTorch • scikit-learn • Streamlit • Selenium</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
